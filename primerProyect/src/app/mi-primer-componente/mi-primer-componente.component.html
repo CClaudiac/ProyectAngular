@@ -1,0 +1,25 @@
+<div class="container">
+
+    <div class="formulario">
+        <label for="">Operando A</label>
+        <input type="number" [(ngModel)]="operandoA">
+    </div>
+
+    <div class="formulario">
+        <label for="">Operando B</label>
+        <input type="number" [(ngModel)]="operandoB">
+    </div>
+
+    <div class="formulario">
+        <button (click)="sumar()">Sumar</button>
+        <button (click)="restar()">Restar</button>
+        <button (click)="multiplicar()">multiplicar</button>
+        <button (click)="dividir()">dividir</button>
+    </div>
+
+    <div class="formulario">
+         <label for="">Resultado</label>
+        <input type="number" placeholder="Resultado" [(ngModel)]="resultado" disabled>
+    </div>
+
+</div>
